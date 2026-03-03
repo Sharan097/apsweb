@@ -1,4 +1,3 @@
-
 "use client";
 
 import { Sidebar } from "@/components/dashboard/Sidebar";
@@ -7,13 +6,19 @@ import { ScansView } from "@/components/scans/ScansView";
 
 export default function ScansPage() {
   return (
-    <div className="flex h-screen w-full bg-slate-50 dark:bg-[#0a0d14]">
+    <div className="flex min-h-screen bg-slate-50 dark:bg-[#0F0F0F]">
+
+      {/* Sidebar */}
       <Sidebar />
 
-      <main className="flex-1 p-6 space-y-6">
-        <DashboardHeader />
-        <ScansView />
+      {/* Main Content */}
+      <main className="flex-1 flex flex-col overflow-hidden">
+        <div className="flex-1 overflow-y-auto p-6 space-y-6">
+          <DashboardHeader />
+          <ScansView />
+        </div>
       </main>
+
     </div>
   );
 }

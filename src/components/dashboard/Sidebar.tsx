@@ -61,7 +61,7 @@ export function Sidebar() {
   );
 
   return (
-    <aside className="w-64 flex-shrink-0 flex flex-col border-r border-gray-200 dark:border-[#262626] bg-white dark:bg-[#0F0F0F] p-6 hidden md:flex">
+    <aside className="w-64 h-screen sticky top-0 shrink-0 flex flex-col border-r border-gray-200 dark:border-[#262626] bg-white dark:bg-[#0F0F0F] p-6 hidden md:flex">
 
       <div className="flex items-center gap-2 mb-10">
         <div className="w-8 h-8 rounded-full bg-[#0CC8A8] flex items-center justify-center">
