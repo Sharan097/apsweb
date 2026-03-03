@@ -12,6 +12,7 @@ import {
   ChevronRight,
   LogOut,
 } from "lucide-react";
+import { ThemeToggle } from "@/components/ui/ThemeToggle";
 
 import { useRouter, usePathname } from "next/navigation";
 
@@ -65,14 +66,18 @@ export function Sidebar() {
 
   <div className="flex-1 flex flex-col overflow-y-auto px-6 py-6">
 
-    <div className="flex items-center gap-2 mb-10">
-      <div className="w-8 h-8 rounded-full bg-[#0CC8A8] flex items-center justify-center">
-        <div className="w-3 h-3 bg-white rounded-full" />
-      </div>
-      <span className="text-2xl font-semibold tracking-tight text-[#0CC8A8]">
-        aps
-      </span>
+    <div className="flex items-center justify-between mb-10">
+  <div className="flex items-center gap-2">
+    <div className="w-8 h-8 rounded-full bg-[#0CC8A8] flex items-center justify-center">
+      <div className="w-3 h-3 bg-white rounded-full" />
     </div>
+    <span className="text-2xl font-semibold tracking-tight text-[#0CC8A8]">
+      aps
+    </span>
+  </div>
+
+  <ThemeToggle />
+</div>
 
     <nav className="flex-1 space-y-8">
       {renderLinks(navItems)}

@@ -17,7 +17,7 @@
   --muted: #F3F4F6;
 }
 
-/* Dark Mode */
+
 .dark {
   --background: #0F0F0F;
   --foreground: #E5E7EB;
@@ -54,7 +54,6 @@
   }
 }
 
-/* Severity Colors */
 .severity-critical {
   @apply bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-400;
 }
